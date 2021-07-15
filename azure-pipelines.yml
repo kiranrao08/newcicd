@@ -8,7 +8,6 @@ trigger:
 resources:
 - repo: self
 
-name: Default
 
 variables:
   # Container registry service connection established during pipeline creation
@@ -18,8 +17,12 @@ variables:
   dockerfilePath: '$(Build.SourcesDirectory)/complete/Dockerfile'
   tag: '$(Build.BuildId)'
 
+name: Default
+
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
+  name: Default
+
 
 stages:
 - stage: Build
