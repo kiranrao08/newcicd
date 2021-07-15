@@ -17,7 +17,6 @@ variables:
   dockerfilePath: '$(Build.SourcesDirectory)/complete/Dockerfile'
   tag: '$(Build.BuildId)'
 
-name: Default
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
